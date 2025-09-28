@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <title>Project Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <h1>JS Project Manager</h1>
+  
+  <div class="status-identify">
+    <h3>Project Status</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Sr.No</th>
+          <th>Project Name</th>
+          <th>Notes</th>
+          <th>Status</th>
+          <th>Severity</th>
+          <th>Version</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Advance Todo</td>
+          <td>
+            <ul>
+              <legend class="legend updates">--- Upcoming Updates ---</legend>
+              <li>Update logic</li>
+              <li>UI Update</li>
+              <legend class="legend bugs">--- Bugs ---</legend>
+              <li>Adds the duplicate todos when the user deletes and again adds the todos (without refreshing the page*). comment the reload object in the module "removeDataFromLS.js"</li>
+              <li>When the list is empty message should be there like "Nothing dropped yet!"</li>
+              <legend class="legend verson-updates">--- Version History & Description ---</legend>
+              <li> v2.1 : added toast</li>
+              <li> v2.1 : implemented in modules</li>
+            </ul>
+          </td>
+          <td>Pending</td>
+          <td><span class="dot-orange"></span> Low</td>        <!-- critical, major, low -->
+          <td>v2.1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Calculator</td>
+          <td>
+              <ul>
+                <legend class="legend updates">--- Upcoming Updates ---</legend>
+                <li>Advance functionalities</li>
+                <legend class="legend bugs">--- Bugs ---</legend>
+                <span>Good! No bugs</span>
+                <legend class="legend verson-updates">--- Version History & Description ---</legend>
+                <li> v1 : UI Improvement</li>
+              </ul>
+          </td>
+          <td>Pending</td>
+          <td><span class="dot-orange"></span> Low</td>
+          <td>v1</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Gradient Generator</td>
+          <td>
+            <ul>
+              <legend class="legend updates">--- Upcoming Updates ---</legend>
+              <li>Advance functionalities</li>
+              <legend class="legend bugs">--- Bugs ---</legend>
+              <span>Good! No bugs</span>
+              <legend class="legend verson-updates">--- Version History & Description ---</legend>
+              <li> v1 : Gradient Generator App</li>
+            </ul>
+          </td>
+          <td>Completed</td>
+          <td><span class="dot-green"></span> Up-to-date</td>
+          <td>v1</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Habit Tracker</td>
+          <td>
+            <ul>
+              <legend class="legend updates">--- Upcoming Updates ---</legend>
+              <li>Advance functionalities</li>
+              <legend class="legend bugs">--- Bugs ---</legend>
+              <li>checkbox not working! only first element matches rest of didn't</li>
+              <li>streak not updating, we want single habit single streak instead of in one single variable</li>
+              <li>data is not removed from the local storage only DOM element is removing</li>
+              <li>User should not again check the box! once the user checks the box next time it should be disabled until 24hours, once 24hour have done reset the checkbox status to false</li>
+              <legend class="legend verson-updates">--- Version History & Description ---</legend>
+              <li> v1 : Habit Tracker App</li>
+            </ul>
+          </td>
+          <td>On-going</td>
+          <td><span class="dot-red"></span> Critical</td>
+          <td>v1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="wrapper">
+    <h3>Projects</h3>
+    <div class="links">
+      <a href="/To-Do-App/index.html" target="_blank">To-Do App</a>
+      <a href="/Calculator/index.html" target="_blank">Calculator</a>
+      <a href="/gradient-Generator/index.html" target="_blank">Gradient Generator</a>
+      <a href="/habit-Tracker/index.html" target="_blank">Habit Tracker</a>
+    </div>
+  </div>
+
+  <p style="color: rgb(255, 255, 255); text-align: center;" >by vinz - for vinz</p>
+
+</body>
+</html>

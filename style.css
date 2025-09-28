@@ -1,0 +1,135 @@
+html{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #0f0f0f;
+}
+
+h1{
+    margin: 5vh; 
+    color: white; 
+    text-align: center;
+    font-size: 2.5rem
+}
+
+h3{
+    color: white;
+    text-align: center;
+    font-size: 2rem
+}
+
+.wrapper {
+    background-color: transparent;
+    text-align: center;
+    padding: 15px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid white;
+    
+    &:hover {
+/*         background-Image: linear-gradient(to right, #5b2e9b, #3f3f82); */
+        background-color: #fff;
+        color: #000;
+        transform: scale(1.10);
+    }
+}
+
+.status-identify{
+    margin: 15px;
+}
+
+table{
+    border: 1.5px solid white;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    width: 100%;
+    margin: 15px
+    font-size: 0.9rem;
+}
+
+thead tr th{
+    padding: 5px;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    border-bottom: 1.5px solid white;
+}
+
+tbody tr td{
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+
+.dot-red{
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    box-shadow: rgb(255, 0, 0) 1px 1px 10px;
+    margin-right: 2px;
+}
+.dot-orange{
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: rgb(255, 174, 0);
+    border-radius: 50%;
+    box-shadow: rgb(255, 174, 0) 1px 1px 10px;
+    margin-right: 2px;
+}
+.dot-green{
+    margin-right: 2px;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: rgb(46, 231, 0);
+    border-radius: 50%;
+    box-shadow: rgb(46, 231, 0) 1px 1px 10px;
+}
+
+@-webkit-keyframes dotblinker {
+    from {opacity: 1.0;}
+    from {opacity: 0.0;}
+}
+
+.dot-red, .dot-orange{
+    text-decoration: blink;
+    -webkit-animation-name: dotblinker;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+}
+
+legend {
+    padding: 0.3rem;
+    font-variant: small-caps;
+}
+
+.verson-updates {
+    color: rgb(46, 231, 0);
+}
+
+.bugs {
+    color: rgb(255, 0, 0)
+}
+
+.updates {
+    color: rgb(255, 174, 0);
+}

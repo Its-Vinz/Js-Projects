@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Habito</h1>
+    </nav>
+
+    <section style="margin: 25px;">
+        <h2><p class="scale">Track</p>Your Habit</h2>
+        <hr/>
+    </section>
+
+    <div class="read"></div>
+
+    <section style="margin: 25px;">
+        <p style="font-size: 1.1rem; font-weight: 600;">Lets, Start engine...</p>
+        <p style="font-size: 0.9rem; font-weight: 500;">Add your habit - track and checkmate your own streaks</p>
+        <form id="container">
+            <label for="habitText" style="margin: 15px">Enter Habit</label>
+            <input type="text" placeholder="Enter your habit" id="habitText" required>
+            <label for="habitDate" style="margin: 15px">Enter Date</label>
+            <input type="date" placeholder="Enter your habit" id="habitDate" required>
+            <div class="btnContainer">
+                <button type="submit" class="addBtn">Add</button>
+            </div>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Habit</th>
+                    <th>Start Date</th>
+                    <th>Done Today</th>
+                    <th>Streak</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <td>
+                </td>
+            </tbody>
+        </table>
+    </section>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

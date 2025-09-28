@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListLinks</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="toast"></section>
+
+    <h2>ListLinks</h2>
+
+    <form>
+        <div class="inpButContainer">
+            
+            <label for="title">Title</label>
+            <input type="text" name="Title" id="title" placeholder="Enter title" class="inputData">
+
+            <label for="priority">Priority</label>
+            <select name="Priority" id="priority" class="selectData">
+                <option class="selectActive" disabled>Select Option</option>
+                <option class="selectActive" value="ongoing">Low</option>
+                <option class="selectActive" value="hold">Medium</option>
+                <option class="selectActive" value="cancelled">Major</option>
+                <option class="selectActive" value="done">Critical</option>
+            </select>
+            <!-- <input type="text" name="Priority" placeholder="Set priority level" id="priority" class="inputData"> -->
+            
+            <label for="dateFrom">Deadline From</label>
+            <input type="date" name="dateFrom" id="dateFrom" class="inputData">
+            
+            <label for="dateTo">Deadline To</label>
+            <input type="date" name="dateTo" id="dateTo" class="inputData">
+            
+            <label for="Status">Status</label>
+            <select name="status" id="Status" class="selectData">
+                <option class="selectActive" disabled>Select Option</option>
+                <option class="selectActive" value="ongoing">Ongoing</option>
+                <option class="selectActive" value="hold">Hold</option>
+                <option class="selectActive" value="cancelled">Cancelled</option>
+                <option class="selectActive" value="done">Done</option>
+            </select>
+            <!-- <input type="text" name="status" id="Status" placeholder="Current status" class="inputData"> -->
+
+            <br/><br/>
+
+            <button class="btn">Add</button>
+
+        </div>
+    </form>
+    <br/><br/>
+    <div id="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Priority</th>
+                    <th>Deadline To</th>
+                    <th>Deadline From</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="table-data">
+            </tbody>
+        </table>
+    </div>
+
+    <br/>
+
+    <footer>
+        <p> crafted with ❤️ <a href="https://github.com/Its-Vinz">by vinz</a> </p>
+    </footer>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>
