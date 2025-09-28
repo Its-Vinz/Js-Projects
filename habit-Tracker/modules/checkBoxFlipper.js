@@ -2,7 +2,7 @@ import { addDataToLS } from "./addDataToLS";
 import { globalDataHolder } from "./globalDataHolder";
 
 export const checkBoxFlipper = () => {
-  const systemTime = new Date();
+  // const systemTime = new Date();
   document
   .querySelectorAll('.checkBOX')
   .forEach((element) => {
