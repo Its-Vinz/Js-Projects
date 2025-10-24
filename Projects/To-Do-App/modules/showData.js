@@ -1,8 +1,11 @@
 import { getLocalStorageData } from "./getLocalStorageData";
 
 export const showData = () => {
-  getLocalStorageData()
-    .forEach((element) => {
+  let Data = getLocalStorageData()
+  Data.forEach((element) => {
+    console.log(element);
+    
+    
       let dynamicTr = document.createElement('tr');
       dynamicTr.classList.add("dynamic-table-row");
       dynamicTr.setAttribute("data-title", element.title_todo);
@@ -21,5 +24,6 @@ export const showData = () => {
       document
         .querySelector('.table-data')
         .append(dynamicTr);
-    });
+
+  });
 }

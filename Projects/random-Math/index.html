@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Random-Math</title>
+</head>
+<body>
+  <h1><a href="">Random Math Problems</a></h1>
+  <p>Random Math Problem let you think quickly what will be it's answer</p>
+  <section>
+    <p class="sample"></p>
+  </section>
+  <section id="user"></section>
+  <br>
+  <div class="container">
+    <div class="level">
+      <label for="Level">Choose Level:</label>
+      <select name="level" id="Level" class="parentDrop">
+        <option class="Drop" disabled selected>Select Option</option>
+        <option class="Drop" value="easy">Easy</option>
+        <option class="Drop" value="medium">Medium</option>
+        <option class="Drop" value="hard">Hard</option>
+      </select>
+    </div>
+    <div class="digits">
+      <label for="Digits">Choose Digit:</label>
+      <select name="digits" id="Digits" class="parentDrop">
+        <option class="Drop" disabled selected>Select Option</option>
+        <option class="Drop" value="1">1</option>
+        <option class="Drop" value="2">2</option>
+        <option class="Drop" value="3">3</option>
+        <option class="Drop" value="4">4</option>
+      </select>
+    </div>
+    <button class="btn" type="submit">Start</button>
+  </div>
+  <section class="infoContainer">
+    <p>Selected Level: </p>
+    <p>Selected Digit: </p>
+    <p>Total Points Earned: 0</p>
+    <p>Total Points Lost: 0</p>
+    <p class="counter">Counter: </p>
+  </section>
+  <section class="mainContainer">
+    <div>
+      <p class="mathProblemDisplay">25 + 25</p>
+      <input type="number" name="userAnswer" id="userAnswer" class="userAnswer" placeholder="Your Answer">
+    </div>
+    <div class="buttons">
+      <button class="btn" style="margin: 0.8rem;" type="button">Submit</button>
+      <button class="btn" style="margin: 0.8rem;" type="button">Next</button>
+    </div>
+  </section>
+
+  <script src="./main.js" type="module"></script>
+</body>
+</html>

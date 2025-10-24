@@ -11,7 +11,6 @@ export const createTr = (currTodo) => {
         <button class="btnn delete-btn" data-title="${currTodo.title_todo}"></button>
         <button class="btnn edit-btn"></button> 
     `;
-    console.log("createTR : appended the TR in the user display");
     return document
             .querySelector('.table-data')
             .append(dynamicTr);

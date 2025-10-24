@@ -10,5 +10,7 @@ removeDataWithElement()
 checkBoxFlipper()
 
 document
-.querySelector('.addBtn')
-.addEventListener('click', processData);
+  .querySelector('.addBtn')
+  .addEventListener('click', (e) => {
+    processData(e) 
+  });

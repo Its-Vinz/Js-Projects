@@ -20,13 +20,13 @@
     <div class="read"></div>
 
     <section style="margin: 25px;">
-        <p style="font-size: 1.1rem; font-weight: 600;">Lets, Start engine...</p>
-        <p style="font-size: 0.9rem; font-weight: 500;">Add your habit - track and checkmate your own streaks</p>
+        <p style="font-size: 1.1rem; font-weight: 600;">Add your habit</p>
+        <p style="font-size: 0.9rem; font-weight: 500;">Track and checkmate your own streaks</p>
         <form id="container">
             <label for="habitText" style="margin: 15px">Enter Habit</label>
             <input type="text" placeholder="Enter your habit" id="habitText" required>
             <label for="habitDate" style="margin: 15px">Enter Date</label>
-            <input type="date" placeholder="Enter your habit" id="habitDate" required>
+            <input type="date" id="habitDate" required>
             <div class="btnContainer">
                 <button type="submit" class="addBtn">Add</button>
             </div>
@@ -38,6 +38,8 @@
                     <th>Start Date</th>
                     <th>Done Today</th>
                     <th>Streak</th>
+                    <!-- <th>Last Visited</th> -->
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody id="tableBody">

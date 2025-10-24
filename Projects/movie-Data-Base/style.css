@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+    background-color: rgba(17, 17, 17, 0.979);
+}
+
+h1 {
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    padding: 1.5rem;
+}
+
