@@ -18,40 +18,49 @@
   <div class="container">
     <div class="level">
       <label for="Level">Choose Level:</label>
-      <select name="level" id="Level" class="parentDrop">
+      <select name="level" id="Level" class="parentDrop" required>
         <option class="Drop" disabled selected>Select Option</option>
         <option class="Drop" value="easy">Easy</option>
         <option class="Drop" value="medium">Medium</option>
         <option class="Drop" value="hard">Hard</option>
       </select>
     </div>
-    <div class="digits">
+    <div class="digits static">
       <label for="Digits">Choose Digit:</label>
-      <select name="digits" id="Digits" class="parentDrop">
-        <option class="Drop" disabled selected>Select Option</option>
+      <select name="digits" id="Digits" class="parentDrop" required  style="margin-right: 1rem;">
+        <option class="Drop"  value='' disabled selected>Select Option</option>
         <option class="Drop" value="1">1</option>
         <option class="Drop" value="2">2</option>
         <option class="Drop" value="3">3</option>
         <option class="Drop" value="4">4</option>
       </select>
+      <!-- <div class="radioButton"> -->
+        <label for="ope">Choose Operation:</label>
+        <select name="ope" id="ope" class="parentDrop">
+          <option class="Drop"  value='' disabled selected>Select operation</option>
+          <option class="Drop" value="+">+</option>
+          <option class="Drop" value="x">x</option>
+          <option class="Drop" value="-">-</option>
+          <option class="Drop" value="/">/</option>
+        </select>
+      <!-- </div> -->
     </div>
-    <button class="btn" type="submit">Start</button>
+    <p class="messg"></p>
+    <div class="staticHardBtn"></div>
+    <button type="submit" class="btn">Start</button>
   </div>
+  <!-- <img src="./assets/refresh-ccw-clock-svgrepo-com.svg" height="32" alt=""> -->
   <section class="infoContainer">
-    <p>Selected Level: </p>
-    <p>Selected Digit: </p>
-    <p>Total Points Earned: 0</p>
-    <p>Total Points Lost: 0</p>
     <p class="counter">Counter: </p>
   </section>
   <section class="mainContainer">
     <div>
-      <p class="mathProblemDisplay">25 + 25</p>
+      <p class="mathProblemDisplay"></p>
       <input type="number" name="userAnswer" id="userAnswer" class="userAnswer" placeholder="Your Answer">
     </div>
     <div class="buttons">
-      <button class="btn" style="margin: 0.8rem;" type="button">Submit</button>
-      <button class="btn" style="margin: 0.8rem;" type="button">Next</button>
+      <button class="btn" style="margin: 0.8rem; color: rgb(29, 27, 27); border: 1px solid rgb(29, 27, 27);" type="button">Submit</button>
+      <button class="btn" style="margin: 0.8rem; color: rgb(29, 27, 27); border: 1px solid rgb(29, 27, 27);" type="button">Next</button>
     </div>
   </section>
 

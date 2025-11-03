@@ -1,62 +1,21 @@
 import { accessDataFromLS } from "./modules/accessDataFromLS";
-import { storeDataInLS } from "./modules/storeDataInLS";
-import { toastSection } from "./modules/toastSection";
+import { displayInfo } from "./modules/displayInfo";
+import { hardSelector, userSelection } from "./modules/stateHandler";
+import { user_options_handler } from "./modules/userOptions";
+// import { randomNumberLogic } from "./modules/randomNumber";
 
-let digits = document.querySelector('#Digits');
-let level = document.querySelector('#Level');
-// let uRegister = "";
-// let sample = document.querySelector('.sample');
+let LSData = accessDataFromLS();
 
-let Options_Data = accessDataFromLS() || []; 
+displayInfo();      // displays information based on user preferences
+// randomNumberLogic();     // main logic, generates random numbers, checks there answers & steaks handling section
 
-const dynamicUser = () => {
-    let element = document.createElement('div')
-    element.classList.add('user');
-    element.innerHTML = `
-        <p class="userLabel">Username</p>
-        <input type="text" name="user" id="user" placeholder="Give Username" class="userInput" required>
-        <button type="button" class="userNameButton">Submit</button>
-    `
-    document.querySelector('#user').append(element);
-    let du = document.querySelector('.userNameButton').addEventListener('click', () => {
-        let btnRef = document.querySelector('.userInput');
-        let uRegister = btnRef.value;
-        let mappedData = Options_Data.map((e) => {
-            storeDataInLS(e.user_name);
-        });
-        alert('registered!');
-        document.querySelector('#user').style.display = 'block';
-        return uRegister;
-        console.log(`dynamicUser name runned! data : ${uRegister}`);
-    });
-    return du;          
-}
+/*
+    // selectHander.js modules functions 
+*/
+hardSelector();     // when user select hard option
+userSelection();    // perform operation based on user selected option
+// userInputChecker()  // checks for valid input or not
 
-const user_options_handler = () => {
-    document.querySelector('.btn').addEventListener('click', () => {
-        const Data = {
-            level : level.value,
-            digit : digits.value,
-            points : 0,
-            loss : 0,
-            user_name : "",
-            uRegister : true
-        };
-        Options_Data.push(Data);
-        storeDataInLS(Options_Data);
-        console.log('Data append in LS');
-    });
-
-}
-
-// const random_Number_Generator = () => {
-//     let number = Math.floor(Math.random() * 10000);
-    
-    
-
-//     sample.innerText = number;
-// }
-
-// random_Number_Generator();
-dynamicUser()
-user_options_handler()
+document
+.querySelector('.btn')
+.addEventListener('click', (e) => user_options_handler(e));
